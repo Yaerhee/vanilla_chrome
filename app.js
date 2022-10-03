@@ -7,8 +7,10 @@ const HIDDEN_CLASSNAME = "hidden" // variable with only string(s)
 
 const onLoginSubmit = e => { // submit event
     e.preventDefault()
-    const userName = loginInput.value
     loginForm.classList.add('hidden') // hide input (userName exists)
+
+    const userName = loginInput.value
+    localStorage.setItem('userName', userName) // temp storage on DOM
     greeting.innerText = `Hello ${userName}` // = "Hello" + userName
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
