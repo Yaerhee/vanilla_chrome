@@ -12,11 +12,13 @@ const onLoginSubmit = e => { // submit event
 
     const userName = loginInput.value
     localStorage.setItem(USERNAME_KEY, userName) // temp storage on DOM
-    showGreetings(userName)
+    showGreetings() // 이미 userName 이 저장되어 있으므로 변수로 담지 않아도 됨
+    // but => localStorage.getItem x2 (취존... ^^)
 }
 
 // remove hidden attr from greeting and show texts
-const showGreetings = userName => {
+const showGreetings = () => {
+    const userName = localStorage.getItem(USERNAME_KEY)
     greeting.classList.remove(HIDDEN_CLASSNAME)
     greeting.innerText = `Hello ${userName}`
 }
@@ -27,5 +29,5 @@ if (localUserName === null) { // no name -> show form
     loginForm.classList.remove(HIDDEN_CLASSNAME)
     loginForm.addEventListener('submit', onLoginSubmit)
 } else { // name exists -> greeting hidden delete
-    showGreetings(localUserName)
+    showGreetings()
 }
