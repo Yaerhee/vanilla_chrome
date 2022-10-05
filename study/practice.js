@@ -19,8 +19,8 @@ const calculator = {
 const a = 2
 const b = 4
 
-console.log(calculator.add(a, b))
-console.log(calculator.minus(a, b))
-console.log(calculator.multiply(a, b))
-console.log(calculator.divide(a, b))
-console.log(calculator.powerOf(a, b))
+const plusResult = calculator.add(a, b)
+const minusResult = calculator.minus(plusResult, 10)
+const timesResult = calculator.multiply(10, minusResult)
+const divideResult = calculator.divide(timesResult, plusResult)
+const powerOfResult = calculator.powerOf(divideResult, minusResult)
