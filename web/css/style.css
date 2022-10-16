@@ -43,7 +43,7 @@ button:hover {
 .background img {
     width: 100vw;
     height: 100vh;
-    opacity: 0.7; // temp
+    opacity: 0.7; /* temp */
 }
 
 .header-login {
@@ -54,19 +54,33 @@ button:hover {
 
 .container {
     display: flex;
+    flex-direction: column; /* enable vertical align */
     justify-content: center;
     align-items: center;
     margin: auto;
     height: 70vh;
-    width: 100%;
+    width: 40%;
 }
 
-.horizontal-line {
-    border-bottom: #000000 1px;
+.upper-clock {
+    padding: 3rem;
 }
 
 #clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+
     font-size: 4rem;
-    padding: 3rem;
     border-radius: 1rem;
+}
+
+.horizontal-line {
+    border: 3px solid #000000;
+    border-radius: 0.25rem;
+}
+
+.under-clock {
+    margin: 0 auto;
 }
