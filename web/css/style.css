@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500');
+
 
 * {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 body {
@@ -58,29 +60,33 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 70vh;
+    height: 100vh;
     width: 40%;
-}
-
-.upper-clock {
-    padding: 3rem;
 }
 
 #clock {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 0;
-
-    font-size: 4rem;
-    border-radius: 1rem;
-}
-
-.horizontal-line {
-    border: 3px solid #000000;
-    border-radius: 0.25rem;
+    margin: 0;
+    font-size: 8rem;
+    color: #fff;
+    height: 100px;
 }
 
 .under-clock {
-    margin: 0 auto;
+}
+
+#greeting {
+    font-weight: bold;
+}
+
+#weather {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#weather-icon {
+    filter: brightness(0) invert(1);
 }

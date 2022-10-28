@@ -20,7 +20,7 @@ const onLoginSubmit = e => { // submit event
 const showGreetings = () => {
     const userName = localStorage.getItem(USERNAME_KEY)
     greeting.classList.remove(HIDDEN_CLASSNAME)
-    greeting.innerText = `Hello ${userName}`
+    greeting.innerText = `Good Day, ${userName}.`
 }
 
 const localUserName = localStorage.getItem(USERNAME_KEY)
