@@ -11,9 +11,10 @@ body {
 }
 
 input {
-    border-radius: 0.25rem;
-    border-color: transparent;
-    background-color: #eeeeee;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    text-align: center;
 }
 
 button {
@@ -72,6 +73,21 @@ button:hover {
     font-size: 8rem;
     color: #fff;
     height: 100px;
+}
+
+#absolute-name-box {
+    border-bottom: 2px solid #ffffff;
+    width: 370px;
+    font-size: 2em;
+}
+
+#absolute-name-box:focus {
+    outline: none;
+}
+
+#login-title {
+    text-align: center;
+    margin: 0;
 }
 
 .under-clock {
